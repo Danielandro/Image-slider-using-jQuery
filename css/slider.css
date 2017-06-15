@@ -1,0 +1,40 @@
+/*set width & move image to top edge of the page and center*/
+.wrapper{
+  width: 600px;
+  margin: 0 auto;
+}
+
+/*set <div> dimensions equal to image size, hides all images except for image1. centre image horizontally*/
+#slider{
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+/*target images within #slider,set image dimensions = to containing <div>  */
+#slider > img{
+  width: 600px;
+  height: 400px;
+  float: left;
+  display: none;
+}
+
+/*target buttons- could also use a class*/
+a{
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #666;
+  border-radius:20px;
+}
+
+/*seperate buttons into classes*/
+a.left{
+ float: left;
+}
+
+a.right{
+ float: right;
+}
